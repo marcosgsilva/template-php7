@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <tr>
+        <td>Nome</td>
+        <td>Email</td>
+        <td>Password</td>
+    </tr>
+    <?php foreach ($data as $line) { ?>
+        <tr>
+            <td><?php echo $line->name; ?></td>
+            <td><?php echo $line->mail; ?></td>
+            <td><?php echo $line->password; ?></td>
+            <td><a href="/update?id=<?php echo $line->id;?>">Editar</a></td>
+            <td><a href="/delete?id=<?php echo $line->id;?>">Excluir</a></td>
+        </tr>
+    <?php } ?>
+
+
+</table>

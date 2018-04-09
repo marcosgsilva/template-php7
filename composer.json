@@ -1,0 +1,19 @@
+{
+	"name" : "applicação base ",
+	"require" :  {
+		"php" : ">=5.6"
+	},
+	"authors" : [
+		{
+			"name" : "Marcos Paulo",
+			"email": "marcospaulo.silva2009@gmail.com"
+		}
+	],
+	"autoload" : {
+		"psr-4": {
+			"Tools\\" : "vendor/Tools/",
+			"App\\" : "App/"
+		}
+	}	
+
+}
